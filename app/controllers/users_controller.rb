@@ -11,12 +11,9 @@ class UsersController < ApplicationController
     user = User.create user_params
 
     if user.save
-      respond_to do |format|
-        format.html {}
-        format.json { render json: { :user => user } }
-      end
+      render :json => user
     else
-
+      render :json => user.errors
     end
   end
 

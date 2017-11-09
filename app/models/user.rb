@@ -20,7 +20,13 @@ class User < ApplicationRecord
 
   validates :email, :presence => true, :uniqueness => true
   validates :username, :presence => true, :uniqueness => true
+  validates :dob, :presence => true
   validates :password_digest, :presence => true
+
+  validates_length_of :username, :maximum => 30
+  validates_length_of :password, :minimum => 6
+
+  # TODO: Check that the username etc only contains "normal" characters.
 
 
   # ASSOCIATIONS
