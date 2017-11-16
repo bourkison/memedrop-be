@@ -1358,3 +1358,344 @@ Processing by SessionController#create as HTML
 Completed 200 OK in 82ms (Views: 0.4ms | ActiveRecord: 0.8ms)
 
 
+Started POST "/login" for ::1 at 2017-11-10 16:10:17 +1100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"bourkison", "password"=>"[FILTERED]", "session"=>{"username"=>"bourkison", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bourkison"], ["LIMIT", 1]]
+Completed 200 OK in 80ms (Views: 0.5ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/login" for ::1 at 2017-11-10 16:12:21 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"harry@ga.co", "password"=>"[FILTERED]", "session"=>{"username"=>"harry@ga.co", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harry@ga.co"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "harry@ga.co"], ["LIMIT", 1]]
+Completed 200 OK in 102ms (Views: 0.4ms | ActiveRecord: 13.4ms)
+
+
+Started POST "/login" for ::1 at 2017-11-10 16:18:36 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"harry@ga.co", "password"=>"[FILTERED]", "session"=>{"username"=>"harry@ga.co", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "harry@ga.co"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "harry@ga.co"], ["LIMIT", 1]]
+Completed 200 OK in 84ms (Views: 0.4ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/login" for ::1 at 2017-11-10 16:19:52 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"bourkison", "password"=>"[FILTERED]", "session"=>{"username"=>"bourkison", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bourkison"], ["LIMIT", 1]]
+Completed 200 OK in 84ms (Views: 0.4ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/login" for ::1 at 2017-11-16 15:47:06 +1100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"bourkison", "password"=>"[FILTERED]", "session"=>{"username"=>"bourkison", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bourkison"], ["LIMIT", 1]]
+Completed 200 OK in 82ms (Views: 0.5ms | ActiveRecord: 4.5ms)
+
+
+Started POST "/login" for ::1 at 2017-11-16 15:47:56 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"bourkison", "password"=>"[FILTERED]", "session"=>{"username"=>"bourkison", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bourkison"], ["LIMIT", 1]]
+Completed 200 OK in 107ms (Views: 0.4ms | ActiveRecord: 11.6ms)
+
+
+Started POST "/login" for ::1 at 2017-11-16 15:54:02 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"bourkisonen", "password"=>"[FILTERED]", "session"=>{"username"=>"bourkisonen", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bourkisonen"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "bourkisonen"], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/login" for ::1 at 2017-11-16 15:54:05 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"bourkison", "password"=>"[FILTERED]", "session"=>{"username"=>"bourkison", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bourkison"], ["LIMIT", 1]]
+Completed 200 OK in 83ms (Views: 0.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/login" for ::1 at 2017-11-16 16:05:51 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"bourkison", "password"=>"[FILTERED]", "session"=>{"username"=>"bourkison", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bourkison"], ["LIMIT", 1]]
+Completed 200 OK in 83ms (Views: 0.4ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/login" for ::1 at 2017-11-16 16:06:25 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"bourkison", "password"=>"[FILTERED]", "session"=>{"username"=>"bourkison", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bourkison"], ["LIMIT", 1]]
+Completed 200 OK in 77ms (Views: 0.4ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/login" for ::1 at 2017-11-16 16:14:21 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"bourkison", "password"=>"[FILTERED]", "session"=>{"username"=>"bourkison", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bourkison"], ["LIMIT", 1]]
+Completed 200 OK in 86ms (Views: 0.4ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/login" for ::1 at 2017-11-16 16:14:40 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"bourkison", "password"=>"[FILTERED]", "session"=>{"username"=>"bourkison", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bourkison"], ["LIMIT", 1]]
+Completed 200 OK in 87ms (Views: 0.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/login" for ::1 at 2017-11-16 16:14:46 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"bourkison", "password"=>"[FILTERED]", "session"=>{"username"=>"bourkison", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bourkison"], ["LIMIT", 1]]
+Completed 200 OK in 67ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/login" for ::1 at 2017-11-16 16:45:18 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"bourkisonen", "password"=>"[FILTERED]", "session"=>{"username"=>"bourkisonen", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bourkisonen"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "bourkisonen"], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/login" for ::1 at 2017-11-16 16:45:21 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"bourkison", "password"=>"[FILTERED]", "session"=>{"username"=>"bourkison", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bourkison"], ["LIMIT", 1]]
+Completed 200 OK in 87ms (Views: 0.4ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/login" for ::1 at 2017-11-16 16:45:42 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"bourkison", "password"=>"[FILTERED]", "session"=>{"username"=>"bourkison", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bourkison"], ["LIMIT", 1]]
+Completed 200 OK in 79ms (Views: 0.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/login" for ::1 at 2017-11-16 16:48:31 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"bourkison", "password"=>"[FILTERED]", "session"=>{"username"=>"bourkison", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bourkison"], ["LIMIT", 1]]
+Completed 200 OK in 88ms (Views: 0.4ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/login" for ::1 at 2017-11-16 16:53:14 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"bourkison", "password"=>"[FILTERED]", "session"=>{"username"=>"bourkison", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bourkison"], ["LIMIT", 1]]
+Completed 200 OK in 73ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/login" for ::1 at 2017-11-16 16:57:17 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"bourkison", "password"=>"[FILTERED]", "session"=>{"username"=>"bourkison", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bourkison"], ["LIMIT", 1]]
+Completed 200 OK in 74ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/login" for ::1 at 2017-11-16 16:57:37 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"bourkison", "password"=>"[FILTERED]", "session"=>{"username"=>"bourkison", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bourkison"], ["LIMIT", 1]]
+Completed 200 OK in 85ms (Views: 0.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/login" for ::1 at 2017-11-16 17:03:48 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"bourkison", "password"=>"[FILTERED]", "session"=>{"username"=>"bourkison", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bourkison"], ["LIMIT", 1]]
+Completed 200 OK in 84ms (Views: 0.4ms | ActiveRecord: 1.1ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/login" for ::1 at 2017-11-16 17:12:53 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"bourkison", "password"=>"[FILTERED]", "session"=>{"username"=>"bourkison", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bourkison"], ["LIMIT", 1]]
+Completed 200 OK in 74ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/posts" for ::1 at 2017-11-16 17:13:47 +1100
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"content"=>"Hello"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 28ms (Views: 0.2ms | ActiveRecord: 5.0ms)
+
+
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started POST "/posts" for ::1 at 2017-11-16 17:16:11 +1100
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"content"=>"Hello"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 32ms (Views: 0.2ms | ActiveRecord: 5.2ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/users" for 127.0.0.1 at 2017-11-16 17:17:11 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"first_name"=>"Kane", "last_name"=>"Mott", "username"=>"theblade", "email"=>"kane@ga.co", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "dob"=>"2001-11-16"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kane@ga.co"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "theblade"], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "dob", "username", "email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Kane"], ["last_name", "Mott"], ["dob", "2001-11-16"], ["username", "theblade"], ["email", "kane@ga.co"], ["created_at", "2017-11-16 06:17:11.890981"], ["updated_at", "2017-11-16 06:17:11.890981"], ["password_digest", "$2a$10$W5zW/JUnWijJ9hDRSbZCy.wIwXnZ5vCwVkCq7aOe5kk74Erb/ddGO"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND ("users"."id" != $2) LIMIT $3[0m  [["email", "kane@ga.co"], ["id", 11], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND ("users"."id" != $2) LIMIT $3[0m  [["username", "theblade"], ["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 74ms (Views: 0.3ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-11-16 17:17:17 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"theblade", "password"=>"[FILTERED]", "session"=>{"username"=>"theblade", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "theblade"], ["LIMIT", 1]]
+Completed 200 OK in 64ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2017-11-16 17:17:29 +1100
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"content"=>"Blah"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/posts" for ::1 at 2017-11-16 17:17:38 +1100
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"content"=>"Hello"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/posts" for ::1 at 2017-11-16 17:18:07 +1100
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"content"=>"Hello"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `<<' for #<Post:0x000000037fdd90>):
+  
+app/controllers/posts_controller.rb:6:in `create'
+Started POST "/login" for ::1 at 2017-11-16 17:18:22 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"username"=>"bourkison", "password"=>"[FILTERED]", "session"=>{"username"=>"bourkison", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bourkison"], ["LIMIT", 1]]
+Completed 200 OK in 84ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/posts" for ::1 at 2017-11-16 17:18:25 +1100
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"content"=>"ah"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 11.0ms)
+
+
+  
+NoMethodError (undefined method `<<' for #<User:0x00000003c02800>):
+  
+app/controllers/posts_controller.rb:6:in `create'
+Started POST "/posts" for ::1 at 2017-11-16 17:18:49 +1100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"content"=>"ah"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (7.6ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "ah"], ["created_at", "2017-11-16 06:18:49.637678"], ["updated_at", "2017-11-16 06:18:49.637678"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 14.8ms)
+
+
+  
+NoMethodError (undefined method `<<' for #<User:0x00000003607e00>):
+  
+app/controllers/posts_controller.rb:6:in `create'
+Started POST "/posts" for ::1 at 2017-11-16 17:19:17 +1100
+Processing by PostsController#create as HTML
+Started POST "/posts" for ::1 at 2017-11-16 17:19:28 +1100
+  Parameters: {"post"=>{"content"=>"ah"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "ah"], ["created_at", "2017-11-16 06:19:28.055792"], ["updated_at", "2017-11-16 06:19:28.055792"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "posts" SET "user_id" = $1, "updated_at" = $2 WHERE "posts"."id" = $3[0m  [["user_id", 10], ["updated_at", "2017-11-16 06:19:28.073022"], ["id", 2]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 44ms (Views: 0.4ms | ActiveRecord: 5.5ms)
+
+
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"content"=>"ah"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "ah"], ["created_at", "2017-11-16 06:19:28.121673"], ["updated_at", "2017-11-16 06:19:28.121673"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "posts" SET "user_id" = $1, "updated_at" = $2 WHERE "posts"."id" = $3[0m  [["user_id", 10], ["updated_at", "2017-11-16 06:19:28.127371"], ["id", 3]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 33ms (Views: 0.4ms | ActiveRecord: 4.9ms)
+
+
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 1]]
+  [1m[35m (7.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 2]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 3]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m

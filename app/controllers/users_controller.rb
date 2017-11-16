@@ -2,12 +2,6 @@ class UsersController < ApplicationController
 
   # POST request to /users.json
   def create
-    p "*****************"
-    p "Starting create in Users Controller"
-    p "*****************"
-
-    p params
-
     user = User.create user_params
 
     if user.save
